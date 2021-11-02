@@ -1,0 +1,16 @@
+{
+  "name": "turkish-id-verification",
+  "version": "1.0.0",
+  "description": "An npm package to check Turkish Id is real or not.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "soap": "^0.42.0"
+  },
+  "type": "module"
+}
