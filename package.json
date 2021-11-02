@@ -4,13 +4,28 @@
   "description": "An npm package to check Turkish Id is real or not.",
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emirgoren/turkish-id-verification.git"
+  },
+  "keywords": [
+    "id-checker",
+    "turkish-id",
+    "find",
+    "id",
+    "check",
+    "turkish",
+    "id",
+    "tckimlik",
+    "kontrol"
+  ],
+  "author": "Emir Gören",
   "license": "ISC",
-  "dependencies": {
-    "soap": "^0.42.0"
+  "bugs": {
+    "url": "https://github.com/emirgoren/turkish-id-verification/issues"
   },
+  "homepage": "https://github.com/emirgoren/turkish-id-verification#readme",
   "type": "module"
 }
