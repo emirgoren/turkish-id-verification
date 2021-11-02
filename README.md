@@ -8,7 +8,7 @@ An npm package to check Turkish Id is real or not.
 
 ```
 
-import {checkTRId} from 'turkish-id-verification';
+import checkTRId from 'turkish-id-verification';
 
 ```
 
