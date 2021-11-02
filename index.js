@@ -1,6 +1,6 @@
-import soap from 'soap';
+const soap = require('soap');
 
-export function checkTRId(infos){
+function checkTRId(infos){
 
     const verifyString = 'https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?WSDL';
 
@@ -33,3 +33,5 @@ export function checkTRId(infos){
      
     
 }
+
+module.exports = checkTRId;
