@@ -1,6 +1,6 @@
 # turkish-id-verification
 
-An npm package to check Turkish ID is real or not.
+An npm package to check if Turkish ID is real or not
 
 # Installation
 
