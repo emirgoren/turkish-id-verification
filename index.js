@@ -23,7 +23,7 @@ function checkTRId(infos){
                         const err = new Error('Something happened while ID checking.');
                         reject(err);
                     }else{
-                        resolve(result.TCKimlikNoDogrulaResult);
+                        resolve({result: result.TCKimlikNoDogrulaResult, data: infos});
                     }
                 })
             }

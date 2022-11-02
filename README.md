@@ -8,7 +8,7 @@ An npm package to check if Turkish ID is real or not
 
 ```
 
-import checkTRId from 'turkish-id-verification';
+const tid = require('turkish-id-verification');
 
 ```
 
@@ -18,14 +18,14 @@ Async/Await
 
 ```
 (async () => {
-    const result = await checkTRId({
+    const tidResult = await tid({
         Ad: 'string',
         Soyad: 'string',
         TCKimlikNo: number,
         DogumYili: number
     });
 
-    console.log(result); // true or false
+    console.log(tidResult); // {result: boolean, data: info}
 })()
 
 ```
@@ -33,7 +33,7 @@ Async/Await
 Then/Catch
 
 ```
-checkTRId({
+tid({
     Ad: 'string',
     Soyad: 'string',
     TCKimlikNo: number,
