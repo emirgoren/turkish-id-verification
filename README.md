@@ -41,3 +41,5 @@ tid({
 }).then(res => console.log(res)).catch(err => console.log(err));
 
 ```
+
+Note: More updates will be coming.
