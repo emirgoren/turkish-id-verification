@@ -1,6 +1,8 @@
 const soap = require('soap');
 
-function checkTRId(infos){
+
+//Checking people with their real ID and infos (name, surname)
+function isCorrect(infos){
 
     const verifyString = 'https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?WSDL';
 
@@ -34,4 +36,23 @@ function checkTRId(infos){
     
 }
 
-module.exports = checkTRId;
+//Just checks the Turkish ID rule (11 length, last digit % 2 = 0)
+function isRuleOK(id) {
+  id = String(id);
+
+  if(isNaN(parseInt(id))) {
+    return {result: false, id};
+  }else{
+    const lastDigit = String(id).slice(-1);
+
+    if(id.length == 11 && (lastDigit % 2) == 0) 
+      return {result: true, id}
+    else
+      return {result: false, id}
+  }
+} 
+
+module.exports = {
+  isCorrect,
+  isRuleOK
+} 

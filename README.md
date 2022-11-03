@@ -14,32 +14,25 @@ const tid = require('turkish-id-verification');
 
 ## Usage
 
-Async/Await
-
 ```
-(async () => {
-    const tidResult = await tid({
-        Ad: 'string',
-        Soyad: 'string',
-        TCKimlikNo: number,
-        DogumYili: number
-    });
+Functions
 
-    console.log(tidResult); // {result: boolean, data: info}
-})()
+//Checks person's Turkish ID. (Info should be real)
+tid.isCorrect({
+  Ad: String,
+  Soyad: String,
+  TCKimlikNo: number,
+  DogumYili: number
+}).then(res => console.log(res));
 
-```
+returns: {result: boolean, data: info}
 
-Then/Catch
+//Just check the ID for rule. (Should be 11 digits and (last digit % 2) = 0)
+const id = '11111111112'
+tid.isRuleOK(id);
 
-```
-tid({
-    Ad: 'string',
-    Soyad: 'string',
-    TCKimlikNo: number,
-    DogumYili: number
-}).then(res => console.log(res)).catch(err => console.log(err));
-
+returns: {result: boolean, id: givenValue}
 ```
 
-Note: More updates will be coming.
+
+Version: 1.0.5

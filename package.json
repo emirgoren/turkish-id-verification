@@ -1,8 +1,8 @@
 {
   "name": "turkish-id-verification",
-  "version": "1.0.3",
-  "description": "An npm package to check Turkish Id is real or not.",
-  "main": "index.js",
+  "version": "1.0.5",
+  "description": "An npm package to check if Turkish ID is real or not.",
+  "main": "tid.js",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."
