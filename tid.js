@@ -1,9 +1,7 @@
 const soap = require('soap');
 
-
 //Checking people with their real ID and infos (name, surname)
 function isCorrect(infos){
-
     const verifyString = 'https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx?WSDL';
 
     infos.Ad = infos.Ad.toLocaleUpperCase('tr-TR');
@@ -32,11 +30,9 @@ function isCorrect(infos){
         
         });
     }); 
-     
-    
 }
 
-//Just checks the Turkish ID rule (11 length, last digit % 2 = 0)
+//Checks the Turkish ID rule (11 length, last digit % 2 = 0)
 function isRuleOK(id) {
   id = String(id);
 

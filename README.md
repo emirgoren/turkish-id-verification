@@ -17,7 +17,8 @@ const tid = require('turkish-id-verification');
 ```
 Functions
 
-//Checks person's Turkish ID. (Info should be real)
+tid.isCorrect(Object)
+//Checks person's Turkish ID. (Info must be real)
 tid.isCorrect({
   Ad: String,
   Soyad: String,
@@ -27,7 +28,8 @@ tid.isCorrect({
 
 returns: {result: boolean, data: info}
 
-//Just check the ID for rule. (Should be 11 digits and (last digit % 2) = 0)
+tid.isRuleOK(String)
+//Checks the ID for rule. (Should be 11 digits and (last digit % 2) = 0)
 const id = '11111111112'
 tid.isRuleOK(id);
 
